@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'R&C';
-    src: url('R&C-Demo.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Phatom-sans';
-    src: url('TRIAL_PhantomSans0.8-Bold-BF65a9d4d025adb.ttf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*Variables*/
 :root {
   --navy:        #0d1b2e;
   --dark:        #0a1525;
@@ -656,6 +641,18 @@ nav {
   letter-spacing: 1px;
 }
 
+.sponsor-img {
+  width: 88px;
+  height: 52px;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+
+.sponsor-tile:hover .sponsor-img {
+  opacity: 1;
+}
+
 .sponsor-name {
   font-family: var(--mono);
   font-size: 0.65rem;
@@ -839,7 +836,7 @@ nav {
 /*FOOTER*/
 
 footer {
-  margin: 40px auto 0;
+  margin: 48px auto 0;
   border-top: 1px solid rgba(74, 144, 226, 0.15);
   padding: 48px 48px 36px;
   max-width: 1080px;
